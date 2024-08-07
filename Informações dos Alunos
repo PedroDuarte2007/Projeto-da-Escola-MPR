@@ -1,0 +1,93 @@
+Informações dos Alunos.html
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Sobre os Alunos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <center><b><h1><font size="10px">Informações dos Alunos</font></h1></b></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Número de Faltas</th>
+                <th>Número de Presenças</th>
+                <th>Frequência Escolar</th>
+                <th>Atividades</th>
+                <th>Prova</th>
+                <th>Média dos Alunos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Amanda Reis</td><td>2</td><td>18</td><td>90%</td><td>8.3</td><td>8.4</td><td></td></tr>
+            <tr><td>Ana Clara</td><td>1</td><td>19</td><td>95%</td><td>9.1</td><td>8.8</td><td></td></tr>
+            <tr><td>Beatriz Rocha</td><td>0</td><td>20</td><td>100%</td><td>9.3</td><td>9.0</td><td></td></tr>
+            <tr><td>Bruno Rodrigues</td><td>3</td><td>17</td><td>85%</td><td>7.9</td><td>7.7</td><td></td></tr>
+            <tr><td>Camila Pereira</td><td>2</td><td>18</td><td>90%</td><td>8.6</td><td>8.5</td><td></td></tr>
+            <tr><td>Carolina Azevedo</td><td>1</td><td>19</td><td>95%</td><td>9.0</td><td>8.7</td><td></td></tr>
+            <tr><td>Clara Ribeiro</td><td>0</td><td>20</td><td>100%</td><td>9.2</td><td>9.1</td><td></td></tr>
+            <tr><td>Daniel Freitas</td><td>4</td><td>16</td><td>80%</td><td>7.6</td><td>7.5</td><td></td></tr>
+            <tr><td>Felipe Nascimento</td><td>2</td><td>18</td><td>90%</td><td>8.7</td><td>8.8</td><td></td></tr>
+            <tr><td>Gabriel Oliveira</td><td>1</td><td>19</td><td>95%</td><td>9.2</td><td>8.9</td><td></td></tr>
+            <tr><td>Henrique Lima</td><td>3</td><td>17</td><td>85%</td><td>7.8</td><td>7.9</td><td></td></tr>
+            <tr><td>Isabela Gonçalves</td><td>0</td><td>20</td><td>100%</td><td>9.4</td><td>9.2</td><td></td></tr>
+            <tr><td>João Pedro</td><td>2</td><td>18</td><td>90%</td><td>8.9</td><td>8.7</td><td></td></tr>
+            <tr><td>Júlia Costa</td><td>1</td><td>19</td><td>95%</td><td>9.0</td><td>8.8</td><td></td></tr>
+            <tr><td>Laura Fernandes</td><td>0</td><td>20</td><td>100%</td><td>9.5</td><td>9.3</td><td></td></tr>
+            <tr><td>Larissa Mendes</td><td>3</td><td>17</td><td>85%</td><td>7.8</td><td>7.6</td><td></td></tr>
+            <tr><td>Leonardo Ferreira</td><td>2</td><td>18</td><td>90%</td><td>8.7</td><td>8.6</td><td></td></tr>
+            <tr><td>Letícia Silva</td><td>1</td><td>19</td><td>95%</td><td>9.1</td><td>8.9</td><td></td></tr>
+            <tr><td>Lucas Silva</td><td>3</td><td>17</td><td>85%</td><td>7.9</td><td>7.7</td><td></td></tr>
+            <tr><td>Matheus Santos</td><td>2</td><td>18</td><td>90%</td><td>8.8</td><td>8.6</td><td></td></tr>
+            <tr><td>Mariana Souza</td><td>1</td><td>19</td><td>95%</td><td>9.2</td><td>9.0</td><td></td></tr>
+            <tr><td>Nicole Barbosa</td><td>0</td><td>20</td><td>100%</td><td>9.3</td><td>9.1</td><td></td></tr>
+            <tr><td>Pedro Henrique</td><td>4</td><td>16</td><td>80%</td><td>7.7</td><td>7.5</td><td></td></tr>
+            <tr><td>Rafael Almeida</td><td>2</td><td>18</td><td>90%</td><td>8.9</td><td>8.7</td><td></td></tr>
+            <tr><td>Rodrigo Carvalho</td><td>1</td><td>19</td><td>95%</td><td>9.0</td><td>8.8</td><td></td></tr>
+            <tr><td>Samuel Carvalho</td><td>3</td><td>17</td><td>85%</td><td>7.9</td><td>7.8</td><td></td></tr>
+            <tr><td>Sofia Martins</td><td>0</td><td>20</td><td>100%</td><td>9.4</td><td>9.2</td><td></td></tr>
+            <tr><td>Thiago Lima</td><td>2</td><td>18</td><td>90%</td><td>8.7</td><td>8.5</td><td></td></tr>
+            <tr><td>Vitória Almeida</td><td>1</td><td>19</td><td>95%</td><td>9.1</td><td>9.0</td><td></td></tr>
+            <tr><td>André Santos</td><td>2
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    
+    function atualizarMedias() {
+        const tabela = document.querySelector('table tbody');
+        const linhas = tabela.querySelectorAll('tr');
+
+        linhas.forEach(linha => {
+            const atividades = parseFloat(linha.cells[4].textContent);
+            const prova = parseFloat(linha.cells[5].textContent);
+
+            if (!isNaN(atividades) && !isNaN(prova)) {
+                const media = (atividades + prova) / 2;
+                linha.cells[6].textContent = media.toFixed(1);
+            }
+        });
+    }
+
+    
+    atualizarMedias();
+});
+    </script>
+</body>
+</html>
