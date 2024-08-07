@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"> </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+</body>
+
+<div class="Contanier"> 
+
+    <h1><b>Login de Professores</b></h1>
+    <center><input type="text" placeholder="E-mail" id="E-mail"/></center>
+    <center><input type="text" placeholder="Senha" id="Senha"/></center>
+    <a href="Opções para Professor.html"><center><button onclick="Cadastrar()">Entrar</button></center></a>
+
+ </div>
+     <script src="script.js"></script>
+ </body>
+ </html>
+
+ <style> 
+    .container{
+    width: 51%;
+    height: 200px;
+    padding: 5px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15%;
+    }
+    
+    input{
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: white;
+    padding: 5px;
+    margin: 5px;
+    
+    }
+    
+    button{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: black;
+    background: rgba(8, 69, 236, 0.774);
+    color: white;
+    
+    }
+</style>
