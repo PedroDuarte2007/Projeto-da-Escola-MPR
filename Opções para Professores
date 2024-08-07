@@ -13,7 +13,7 @@
     <center><button onclick="Cadastrar()">Alunos</button></center></a>
     <center><button onclick="Cadastrar()">Presença</button></center></a>
     <center><button onclick="Cadastrar()">Atividades</button></center></a>
-    <a href="media de alunos.html"><center><button onclick="Cadastrar()">Medias dos Alunos</button></center></a>
+    <a href="Media dos Alunos.html"><center><button onclick="Cadastrar()">Medias dos Alunos</button></center></a>
     <center><button onclick="Cadastrar()">Entrar</button></center></a>
     <center><button onclick="Cadastrar()">Entrar</button></center></a>
 
