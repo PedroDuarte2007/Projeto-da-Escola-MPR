@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola MIEF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="C:\Users\Desenvolvimento\Pictures\2.pngmief.png">
+    
+    <a href="matricula.html"><center><button onclick="Matricula()"><font face="Impact" size="30px">Faça sua matricula!</button></center></a></font>
+
+    
+
+
+
+    <style>
+        button{
+            width:35%;
+            height:137px;
+            margin: 550px;
+            background-color: rgba(145, 224, 224, 0);
+            border: none;
+            padding: 50px;
+        }
+    </style>
+
+</body>
+</html>
