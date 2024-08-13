@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Aula 03</title>
+	</head>
+	<body>
+		
+		<link rel="stylesheet" href="style.css">
+</head>
+<body background="C:\Users\Desenvolvimento\Downloads\1.pngmief.png">
+    
+    <a href="aula3.html"><center><button onclick="Matricula()"><font face="Impact" size="30px">Faça sua matricula!</button></center></a></font>
+
+
+
+<style>
+        button{
+            width:35%;
+            height:137px;
+            margin: 700px;
+            background-color: rgb(48, 212, 212);
+            border: 100px;
+            border-color: rgb(18, 19, 19);
+            padding: 50px;
+        }
+    </style>
