@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Aula 03</title>
+	</head>
+	<body>
+		<!-- TAG para formulário 
+		       action => para onde os dados do formulario irão
+		       method => maneira que será enviado
+		-->
+		<form action="" method="">
+			<!-- TAG Label etiqueta para o input 
+			       for => identifica o input que pertencer a label
+			-->
+			<label for="nome" >Nome Completo</label>
+
+			<!-- TAG Input - Entrada de dados
+			       type => Define o tipo do dado
+			       id => Identificador do input
+			       placeholder => Texto de identificação do input
+			-->
+			<input type="text" id="nome" placeholder="Insira seu nome" required/>
+			<br>
+			<label for="datanasc">Data de Nascimento</label>
+			<input id="datanasc" type="date" />
+			<br>
+			<label for="indica">CPF</label>
+			<input type="text" placeholder="Digite seu CPF"/>
+			<br>
+			<label for="email">E-mail</label>
+			<input id="email" type="email" placeholder="Informe seu E-mail" />
+			<br>
+			
+			<br>
+			
+			<!-- TAG Fieldset conjunto de campos-->
+			<fieldset>
+				<!-- TAG legend titulo do fieldset -->
+				<legend>Gênero</legend>
+				<input type="radio" id="masc" name="genero" />
+				<label for="masc">Masculino</label>
+				<input type="radio" id="fem" name="genero"/>
+				<label for="fem">Feminino</label>
+				<input type="radio" id="outros" name="genero"/>
+				<label for="outros">Outros</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Escolha um curso</legend>
+				<input type="checkbox" id="Ingles"/>
+				<label for="Ingles">Ingles</label>
+				<input type="checkbox" id="Epanhol"/>
+				<label for="Espanhol">Espanhol</label>
+				<input type="checkbox" id="Mandarim"/>
+				<label for="Mandarim">Mandarim</label>
+				<input type="checkbox" id="Frances"/>
+				<label for="Frances">Frances</label>
+			</fieldset>
+			<br>
+			<label for="info">Informações Adicionais</label><br>
+			<textarea id="info"></textarea>
+			<br>	
+			<label for="senha">Senha</label>
+			<input id="senha" type="password"/>
+			<br>
+			<label for="cidade">Informe a cidade</label>
+			<select id="cidade">
+				<option>Jaguariúna</option>
+				<option>Pedreira</option>
+				<option>Amparo</option>
+				<option>Holambra</option>
+			</select>
+			<br></br>
+			<input type="reset" value="Limpar Form"/>
+            <br></br>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
