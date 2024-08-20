@@ -6,7 +6,7 @@ const cors = require("cors");
 const con = mysql.createCLIConnection({
     users: 'root',
     host: 'localhost',
-    database: 'Academia_Fit'
+    database: 'EscolaMIEF'
 });
 
 //Rota de Teste
@@ -17,14 +17,15 @@ const teste= (req,res) => {
 //CRUD - create
 const createCLI= (req, res) => {
     let cpf = req.query.cpf;
-    let nome = req.query.nome;
-    let sobrenome = req.query.sobrenome;
-    let altura = req.query.altura;
-    let peso = req.query.peso;
-    let endereço = req.query.endereço;
+    let nomecompleto = req.query.nomecompleto;
+    let endereco = req.query.endereco;
     let nascimento = req.query.nascimento;
-    let query = `INSERT INTO  Clientes(cpf, nome, sobrenome, altura, peso, endereço, nascimento) VALUE`;
-    query += `('${cpf}', '${nome}', '${sobrenome}', '${altura}', '${peso}', '${endereço}', '${nascimento}');`;
+    let telefone = req.query.telefone;
+    let plano = req.query.plano;
+    let email = req.query.email;
+    let genero = req.query.genero;
+    let query = `INSERT INTO  Alunos(cpf, nome completo, endereco, nascimento, telefone, plano, email, genero) VALUE`;
+    query += `('${cpf}', '${nomecompleto}, '${endereco}', '${nascimento}', '${telefone}', '${plano}', '${email}', '${genero}');`;
     con.query(query,(err,result)=>{
         if (err){
             res.json(err);
@@ -35,27 +36,9 @@ const createCLI= (req, res) => {
     console.log("Cadastrado com sucesso!");
 }
 
-// const createTre = (req, res) => {
-//     let nome = req.query.nome;
-//     let cpf = req.query.cpf;
-//     let nascimento = req.query.nascimento;
-//     let endereço = req.query.endereço;
-//     let formacao = req.query.formacao;
-//     let query = `INSERT INTO  Treinadores(nome, cpf, nascimento, endereço, formacao) VALUE`;
-//     query += `('${nome}', '${cpf}', '${nascimento}', '${endereço}', '${formacao}');`;
-//     con.query(query,(err,result)=>{
-//         if (err){
-//             res.json(err);
-//         } else {
-//             res.json(result);
-//         }
-//     });
-//     console.log("Cadastrado com sucesso!");
-// }
-
 //CRUD - Read
 const read = (req,res) => {
-    con.query("SELECT * FROM Academia_Fit", (err, result) => {
+    con.query("SELECT * FROM EscolaMIEF", (err, result) => {
         if (err)
             res.json(err);
         else
@@ -71,9 +54,8 @@ app.use(cors());
 
 //Rotas de Saide - Front-End
 app.get("/", teste);
-app.get("/Clientes/createCLI", createCLI);
-// app.get("/Treinadores/createTre", createTre);
-app.get("/Clientes", read);
+app.get("/Alunos/createCLI", createCLI);
+app.get("/Alunos", read);
 
 
 
