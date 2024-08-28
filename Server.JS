@@ -63,3 +63,33 @@ app.get("/Alunos", read);
 app.listen(3000, () => {
     console.log("Cadastrado com Sucesso!");
 });
+
+// CRUD - Delete
+const deleteClient = (req, res) => {
+    const { id } = req.params;
+
+    const query = 'DELETE FROM Clientes WHERE ClienteID = ?';
+    con.query(query, [id], (err, result) => {
+        if (err) {
+            res.status(500).json({ error: err.message });
+        } else {
+            res.json({ message: 'Cliente removido com sucesso', result });
+        }
+    });
+}
+
+// Configurações de saída - FrontEnd
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+// Rotas de Saída - FrontEnd
+app.get("/", teste);
+app.post("/clientes", create); 
+app.get("/clientes", read);
+
+
+// Teste e porta no console
+app.listen(3000, () => {
+    console.log("Servidor rodando na porta 3000");
+});
