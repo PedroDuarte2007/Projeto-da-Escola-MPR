@@ -1,0 +1,204 @@
+INDEX HTML
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola MIEF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="containerheader">
+            <div class="containerLogo">
+                <img src="logo mief.png">
+            </div>
+            <div class="containerMenu">
+                <nav>
+                    <a href="duvidas.html">Duvidas?</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="quemsomos.html">Quem Somos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="containerBanner">
+            <a href="home.html">
+        <img src="unitario.png">
+        <img src="duplo.png">
+        <img src="triplo.png">
+        <img src="quadruplo.png">
+    </a> 
+        </div>
+    
+        
+        <div class="containverdiv">
+            </div>
+            <div class="divimagem">
+                <img src="botao voltar.png">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+QUEM SOMOS HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola MIEF</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+    <header>
+        <div class="containerheader">
+            <div class="containerLogo">
+                <img src="logo mief.png">
+            </div>
+            <div class="containerMenu">
+                <nav>
+                    <a href="duvidas.html">Duvidas?</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="quemsomos.html">Quem Somos?</a>
+                </nav>
+            </div>
+        </div>
+        <h1><center>Bem-vindo à MIEF - Escola de Idiomas e Formação!</h1></center>
+
+        <div class="containerInfo">
+            <img src="tabela e texto.png">
+        </div>
+
+        <div class="containerMapa">
+            <img src="mapa mental.png">
+        </div> 
+ 
+        <style>
+            .containerInfo{
+                transform: translate(3%, 8%);
+                width: 100px ;
+                height: 50px;
+            }
+
+            .containerMapa{
+                transform: translate(86%, 650%);
+                width: 200px ;
+                height: 100px;
+            }
+        </style>
+</body>
+
+
+
+HOME HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="escolhas de idiomas.png">
+  
+</body>
+</html>
+
+
+
+CSS
+
+.containerheader {
+    width: 100%;
+    background: #48b281;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+
+
+    & .containerLogo {
+    width: 40%;
+    
+    }
+
+    & .containerLogo img {
+        width: 70px;
+       
+    }
+
+    & .containerMenu {
+        width: 60%;
+         
+    }
+
+    & .containerMenu nav {
+        padding: 15px;
+       
+    }
+
+    & .containerMenu nav a {
+        color: white;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 15px;
+        text-decoration: none;
+       
+    }
+
+    & .containerMenu nav a:hover{
+        color: white;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.589);
+        border-radius: 16px;
+        
+    }
+}
+
+main{
+    width: 100%;
+
+    & .containerBanner a {
+        width: 27%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    & .containerBanner img {
+        width: 70%;
+        border-radius: 16px;
+        box-shadow: 8px 8px 5px rgba(112, 112, 112, 0.548);
+        margin: 30px;
+        padding: 20px;
+    }
+
+    & .containerBanner img:hover{
+        width: 80%;
+        transition: 0.7s;
+        border-radius: 16px;
+        box-shadow: 8px 8px 5px rgba(99, 98, 98, 0.404);
+    }
+
+}
+    .divimagem {
+   transform: translate(2%, 25%);
+   width: 50%;
+   
+}
+
+
+
+
