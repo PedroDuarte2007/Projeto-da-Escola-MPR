@@ -1,0 +1,239 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Flor de Lis</title>
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="slide-menu" id="slide-menu">
+        <ul>
+            <li><a href="#HOME">Início</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contatos">Contato</a></li>
+
+        </ul>
+    </nav>
+    <header class="header">
+       <img src="imagens/flordelis (2).jfif"class="flor">
+       <p> Beleza em cada arranjo</p>
+    </header>
+    <div class="banner">
+        <h2>Promoção Especial!</h2>
+        <p>Compre 1 buquê e leve o segundo com 50% de desconto</p>
+    </div>
+    <div class="content">
+        <section id="home">
+            <h2>Bem-vindo à Flor de Lis</h2>
+            <p>Oferecemos uma variedade de flores e arranjos para todas as 
+                ocasiões
+            </p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p> Com mais de 10 anos no mercado oferecendo o que há de melhor no
+                ramo da floricultura, onde cada flor conta uma história
+            </p>
+        </section>
+        <section id="Produtos">
+            <h2>Nossos produtos</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="https://acdn.mitiendanube.com/stores/715/044/products/img_20220611_1044061-9dfd27d1dd6ac0ac1b16550424445628-1024-1024.jpg" alt="Buque de Rosas">
+                    <h3>Buquê de Rosas</h3>
+                    <p>R$ 100,00</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSy_FX0UXKuxQI7pftZ5DzNEneH_3TCjBW8vhXZMg_xEsOUnjAavduliYIx9BLVbL4ILo&usqp=CAU" alt="Arranjo de Tulipas">
+                    <h3>Arranjo de Tulipas</h3>
+                    <p>R$80,00</p>
+                    </div>
+                    
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYe8wdQTT485pcElzOYw-fAIweuh3cH2apA&s" alt="Lirios Brancos">
+                    <h3>Lirios Brancos</h3>
+                    <p>R$90,00</p>
+                    </div>
+                 <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4ixaqjEcWyP5hXmOHl4m6iBZ5Aq03xge6g&s" alt="Girassois">
+                    <h3>Girassóis</h3>
+                    <p>R$70,00</p>
+                    </div>    
+                </div>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para pedidos!!</p>
+            </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Flor de Lis</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+CSS
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #eed1b5;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+.slide-menu.active {
+    left: 0;
+}
+
+.menu-toggle.active {
+    left: 250px;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.slide-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.slide-menu ul li {
+    padding: 15px;
+}
+
+.slide-menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.slide-menu ul li a:hover{
+    background-color: #afb1b0;
+}
+
+.header {
+    background: url('header.jpg') no-repeat center/cover;
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.flor {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.banner {
+    background-color: #f5d7bb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20);
+    transition: opacity 0.5s ease, tranform 0.5s ease;
+    animation: fadeInDown 0.5s forwards;
+}
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+.content {
+    padding: 20px;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #f5d7bb;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5d7bb   ;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+JS
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const slideMenu = document.getElementById('slide-menu');
+
+menuToggle.addEventListener('click',()=> {
+    slideMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+
+});
+    
