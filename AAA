@@ -1,0 +1,21 @@
+Exiba o valor total das vendas realizadas em cada dia.
+SELECT v.data_venda, SUM(iv.quantidade * iv.preco_unitario) AS valor_total FROM vendas v JOIN itens_venda iv ON v.venda_id = iv.venda_id GROUP BY v.data_venda ORDER BY v.data_venda;
+
+Mostrar o ultimo cliente a fazer compra
+SELECT c.nome, v.data_venda FROM clientes c JOIN vendas v ON c.cliente_id = v.cliente_id ORDER BY v.data_venda DESC LIMIT 1;
+
+Encontre o cliente que gastou mais em compras no total
+SELECT c.nome, SUM(pr.quantidade * pr.preco_unitario) AS valor_total FROM clientes c JOIN vendas v ON c.cliente_id = v.cliente_id JOIN itens_venda pr ON v.venda_id = pr.venda_id GROUP BY c.cliente_id ORDER BY valor_total DESC LIMIT 1;
+
+Liste os clientes que nunca realizaram uma compra.
+SELECT c.nome FROM clientes c LEFT JOIN produtos pr ON c.cliente_id = c.cliente_id WHERE c.cliente_id IS NULL;
+
+Liste o nome de todos os clientes que não compraram um determinado produto (por exemplo, "Arroz").
+SELECT c.nome FROM clientes c LEFT JOIN produtos pr ON c.cliente_id = c.cliente_id LEFT JOIN produtos p ON pr.produto_id = p.produto_id WHERE p.nome != 'Arroz' OR p.nome IS NULL;
+
+Liste os produtos que estão com estoque abaixo de 10 unidades.
+SELECT estoque FROM produtos WHERE estoque < 10;
+
+Liste os nomes dos clientes e os produtos que eles compraram.
+SELECT c.nome, p.produto_id, p.descricao , p.preco, p.estoque FROM clientes c JOIN produtos p ON c.cliente_id = c.cliente_id;
+
